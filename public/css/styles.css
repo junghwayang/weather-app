@@ -1,0 +1,137 @@
+body {
+    color: #333333;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    min-height: 400px;
+    margin: 20px auto;
+    background: rgb(242, 232, 232);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.12), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    border: 0;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.location__container {
+    font-weight: bold;
+    margin: 30px;
+    border-top: solid 3px #c8c8e2;
+    border-bottom: solid 3px #c8c8e2;
+}
+
+.location__container h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    color: #888888;
+    padding: 0;
+    text-align: center;
+}
+
+footer a {
+    color: #888888;
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid #cccccc;
+    padding: 10px;
+    margin: 0;
+    width: 200px;
+}
+
+.searchbutton {
+    cursor: pointer;
+    border: 2px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    width: 100px;
+}
+
+p {
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.address {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+
+/* style from codepen https://codepen.io/navin_sh/pen/rgknI */
+
+fieldset {
+    display: block;
+    text-align: center;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 0;
+}
+
+.ghost-input {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    font-size: 20px;
+    border:0px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #4b545f;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.ghost-input:focus {
+    border-bottom:1px solid #ddd;
+}
+
+.ghost-button {
+    font-size: 18px;
+    font-family: 'Baloo Bhai', cursive;
+    background-color: transparent;
+    border:3px solid #ddd;
+    padding:10px 30px; 
+    min-width: 350px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.ghost-button:hover {
+    border:3px solid #515151;
+}

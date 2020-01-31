@@ -20,24 +20,24 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     let location = req.body.location
 
-    geocode(location, (err, { lat, lng, location, city } = {}) => {
+    geocode(location, (err, { lat, lng, location, address } = {}) => {
         if (err) {
             res.render('index', {
                 weather: null,
-                error: 'Oops, please try again.'
+                error: err
             })
         } else {
             forecast(lat, lng, (err, forecastData) => {
                 if (err) {
                     res.render('index', {
                         weather: null,
-                        error: 'Oops, please try again.'
+                        error: err
                     })
                 } else {
                     res.render('index', {
-                        city,
                         location,
-                        weather: forecastData.summary,
+                        address,
+                        weather: forecastData.weather,
                         error: null
                     })
                 }
@@ -47,9 +47,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About this app'
-    })
+    res.render('about')
 })
 
 const port = process.env.PORT || 3000
