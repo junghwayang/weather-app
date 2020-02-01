@@ -50,8 +50,6 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
-const port = process.env.PORT || 3000
-
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Server has started.')
 })
